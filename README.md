@@ -55,3 +55,33 @@ Variable yang ada pada Users.csv adalah sebagai berikut :
 ### Univariate Exploratory Data Analysis (EDA)
 
 Tahap eksplorasi penting untuk memahami variabel-variabel pada data serta korelasi antar variabel. Pemahaman terhadap variabel pada data dan korelasinya akan membantu kita dalam menentukan pendekatan atau algoritma yang cocok untuk data kita.
+
+1. Data buku
+
+RangeIndex: 271360 entries, 0 to 271359
+
+Data columns (total 8 columns):
+
+| # | Column | Non-Null Count | Dtype |
+|---|---|---|---|
+| 0 | ISBN | 271360 non-null | object |
+| 1 | Book-Title | 271360 non-null | object |
+| 2 | Book-Author | 271359 non-null | object |
+| 3 | Year-Of-Publication | 271360 non-null | object |
+| 4 | Publisher | 271358 non-null | object |
+| 5 | Image-URL-S | 271360 non-null | object |
+| 6 | Image-URL-M | 271360 non-null | object |
+| 7 | Image-URL-L | 271357 non-null | object |
+
+dtypes: object(8)
+
+memory usage: 16.6+ MB
+
+Jumlah Judul Buku:  242135
+
+Judul Buku:  ['Classical Mythology' 'Clara Callan' 'Decision in Normandy' ...
+'Lily Dale : The True Story of the Town that Talks to the Dead'
+ "Republic (World's Classics)"
+ "A Guided Tour of Rene Descartes' Meditations on First Philosophy with Complete Translations of the Meditations by Ronald Rubin"]
+
+Berdasarkan output diatas kita dapat mengetahui bahwa file Books.csv memiliki 271360 entri dan memiliki data unik sebanyak 242135 yang antara lain 'Classical Mythology' 'Clara Callan' 'Decision in Normandy' 'Lily Dale : The True Story of the Town that Talks to the Dead'  "Republic (World's Classics)".
