@@ -254,9 +254,6 @@ Pada tahap ini, model menghitung skor kecocokan antara pengguna dan ISBN (kode b
 
 Compile model dengan menggunakan Binary Crossentropy untuk menghitung loss function, Adam (Adaptive Moment Estimation) sebagai optimizer, dan root mean squared error (RMSE) sebagai metrics evaluation. 
 
-#### Visualisasi hasil proses training
-![metrik](https://user-images.githubusercontent.com/93992324/204560137-f6ca1802-a231-4ed6-9822-e1d6cf4d9cb0.png)
-
 #### Mendapatkan rekomendasi
 Sebelumnya, pengguna telah memberi rating pada beberapa bukuyang telah mereka kunjungi. Kita menggunakan rating ini untuk membuat rekomendasi buku yang mungkin cocok untuk pengguna.
 
@@ -283,6 +280,19 @@ Keith Laumer : ROGUE BOLO
 Jeffrey, A. Carver : Dragon Rigger
 Robert C. Atkins : Dr. Atkins' New Carbohydrate Gram Counter
 ```
+
+## Evaluation 
+Metrik yang digunakan dalam proyek ini adalah metrik RMSE atau Root Mean Square Error. Secara umum, metrik ini mengukur seberapa jauh hasil prediksi dengan nilai yang sebenarnya, dimana semakin kecil nilai rmse maka semakin akurat hasil prediksinya.
+
+RMSE dihitung dengan cara mengkuadratkan error (selisih antara nilai prediksi dan nilai sebenarnya), kemudian dicari rata-ratanya dengan menjumlahkan error kuadrat lalu dibagi dengan banyaknya data (n). Terakhir kita lakukan operasi akar agar satuan dari RMSE sama dengan satuan nilai sebenarnya. Secara matematis bisa dituliskan seperti:
+<img src="https://user-images.githubusercontent.com/93992324/204567932-2e789f1f-a8bf-4cb0-8bb7-5a608d96dcf7.png" size="100">
+
+### Visualisasi hasil proses training
+![metrik](https://user-images.githubusercontent.com/93992324/204560137-f6ca1802-a231-4ed6-9822-e1d6cf4d9cb0.png)
+
+Proses training model cukup smooth dan model konvergen pada epochs sekitar 100. Dari proses ini, kita memperoleh nilai error akhir sebesar sekitar 0.1501 dan error pada data validasi sebesar 0.3915. Nilai tersebut cukup bagus untuk sistem rekomendasi.
+
+
 ## Referensi
 M. Irfan, A. D. Cahyani, H. R. Fika, "Sistem rekomendasi : buku online dengan metode collaborative filtering" Jurnal teknologi technoscientia, 7(1), 76–84, 2014. [<a href="https://ejournal.akprind.ac.id/index.php/technoscientia/article/view/612/467">Link</a>]
 
